@@ -19,6 +19,13 @@ METHODS
 
     Will return Future that will be done in $seconds.
 
+SEE ALSO
+
+    Same as:
+
+        use Future::IO;
+        my $w_ft = Future::IO->sleep($seconds);
+
 AUTHOR
 
     Jozef Kutej, <jkutej at cpan.org>
