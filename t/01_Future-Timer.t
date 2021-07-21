@@ -29,7 +29,7 @@ subtest 'new()' => sub {
     # finish test after 2s
     my $w_ft2 = Future::Timer->new(2);
     $w_ft2->on_done(sub {is($ft_count++, 3, "2s are over");});
-    cmp_ok($w_ft2->new, '>=', 2, 'done return value are the seconds passed since start');
+    cmp_ok($w_ft2->get, '>=', 2, 'done return value are the seconds passed since start');
 };
 
 done_testing();
