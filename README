@@ -1,0 +1,35 @@
+NAME
+
+    Future::Timer - timer implemented as Future
+
+SYNOPSIS
+
+        use Future::Timer;
+        
+        my $w_ft = Future::Timer->new(60);
+        $w_ft->on_done(sub { say "60 seconds are over" });
+
+DESCRIPTION
+
+    Simple Future wrapper around "TIME-WATCHERS" in AnyEvent.
+
+METHODS
+
+ new($seconds)
+
+    Will return Future that will be done in $seconds.
+
+AUTHOR
+
+    Jozef Kutej, <jkutej at cpan.org>
+
+LICENSE AND COPYRIGHT
+
+    Copyright 2021 jkutej@cpan.org
+
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of either: the GNU General Public License as published
+    by the Free Software Foundation; or the Artistic License.
+
+    See http://dev.perl.org/licenses/ for more information.
+
