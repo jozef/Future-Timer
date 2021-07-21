@@ -58,6 +58,13 @@ Simple L<Future> wrapper around L<AnyEvent/TIME-WATCHERS>.
 
 Will return L<Future> that will be done in C<$seconds>.
 
+=head1 SEE ALSO
+
+Same as:
+
+    use Future::IO;
+    my $w_ft = Future::IO->sleep($seconds);
+
 =head1 AUTHOR
 
 Jozef Kutej, C<< <jkutej at cpan.org> >>
